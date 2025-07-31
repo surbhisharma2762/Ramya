@@ -22,7 +22,13 @@ const Header = () => {
       </div>
       {/* Navbar for mobile and desktop */}
       <div className='flex-1'>
-        <Navbar setMenuOpened={setMenuOpened} countainerStyles={`${menuOpened ? "flex" :"hidden"}`}/>
+        <Navbar setMenuOpened={setMenuOpened} countainerStyles={`${menuOpened ? "flex items-start flex-col gap-y-8 fixed top-16 right-6 p-5 bg-white rounded-x1 shadow-md w-52 ring-1 ring-slate-900/5 z-50":"hidden lg:flex gap-x-5 xl:gap-x-7 medium-15 ring-1 ring-1 ring-slate-900/15 rounded-full p-1 bg-primary" }`}/>
+      </div>
+      <div>
+        {/* {searchbar} */}
+        <div className="flex sm:flex-1 items-center">
+          
+        </div>
       </div>
     </header>
   )
